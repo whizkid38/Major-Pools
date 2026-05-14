@@ -3,32 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>2026 Masters Golf Pool</title>
+<title>2026 PGA Championship Golf Pool</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,600;1,500&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  :root {
-    --green:       #2D6A4F;
-    --green-light: #D8EBE1;
-    --green-mid:   #1B5E42;
-    --green-dark:  #0F3D2A;
-    --gold-light:  #FDF3D0;
-    --gold-mid:    #F0C040;
-    --gold-dark:   #7A5C00;
+:root {
+    --green:       #00305E;
+    --green-light: #D6E4F0;
+    --green-mid:   #002147;
+    --green-dark:  #001530;
+    --gold-light:  #F5EDD6;
+    --gold-mid:    #C9A84C;
+    --gold-dark:   #5C3D00;
     --red-light:   #FCEBEB;
     --red-mid:     #E24B4A;
     --red-dark:    #A32D2D;
     --amber:       #B8860B;
-    --bg:          #EEF4F0;
+    --bg:          #EEF2F7;
     --surface:     #FFFFFF;
-    --surface2:    #E4EDE7;
+    --surface2:    #DCE6F0;
     --border:      rgba(0,0,0,0.08);
-    --border2:     rgba(45,106,79,0.25);
-    --text:        #0F2218;
-    --text2:       #3D6B52;
-    --text3:       #7A9E8A;
+    --border2:     rgba(0,48,94,0.25);
+    --text:        #0A1628;
+    --text2:       #2A4A6B;
+    --text3:       #6A8AAA;
     --shadow:      0 1px 3px rgba(0,0,0,0.07), 0 4px 12px rgba(0,0,0,0.05);
   }
 
@@ -42,7 +42,7 @@
 
   /* ── Top bar ── */
   .topbar {
-    background: #1B5E42;
+    background: #00305E;
     color: #fff;
     padding: 0 2rem;
     display: flex;
@@ -376,7 +376,7 @@
 
 <div class="topbar">
   <div class="topbar-left">
-    <h1>2026 Masters Golf Pool</h1>
+    <h1>2026 PGA Championship Golf Pool</h1>
     <span class="tournament-badge" id="tourney-badge">Loading…</span>
   </div>
   <div class="topbar-right">
@@ -592,7 +592,7 @@ async function fetchData() {
     dot.className = 'live-dot';
     const now = new Date();
     document.getElementById('ts').textContent = 'Updated ' + now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-    document.getElementById('tourney-badge').textContent = 'Masters 2026';
+    document.getElementById('tourney-badge').textContent = 'PGA Championship 2026';
     // Round
     document.getElementById('h-round').textContent = currentRound || '—';
     // Projected cut
