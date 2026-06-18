@@ -69,8 +69,8 @@
     font-size: 11px;
     padding: 3px 9px;
     border-radius: 20px;
-    background: rgba(240,192,64,0.25);
-    color: #F0C040;
+    background: rgba(191,27,44,0.25);
+    color: #BF1B2C;
     letter-spacing: 0.04em;
     font-weight: 500;
   }
@@ -160,7 +160,7 @@
     font-family: 'DM Sans', sans-serif;
     transition: border-color .15s;
   }
-  .search-wrap input:focus { border-color: var(--green); box-shadow: 0 0 0 2px rgba(45,106,79,0.15); }
+  .search-wrap input:focus { border-color: var(--green); box-shadow: 0 0 0 2px rgba(0,43,92,0.15); }
   .search-icon {
     position: absolute; left: 10px; top: 50%; transform: translateY(-50%);
     color: var(--text3); font-size: 15px; pointer-events: none;
@@ -232,7 +232,7 @@
     transition: background .1s;
   }
   tbody tr:last-child { border-bottom: none; }
-  tbody tr:hover, tbody tr.open { background: #F9F7F3; }
+  tbody tr:hover, tbody tr.open { background: #EEF1F7; }
 
   td {
     padding: 10px 12px;
@@ -254,7 +254,7 @@
     font-size: 11px; font-weight: 500;
   }
   .m1 { background: var(--gold-mid); color: var(--gold-dark); }
-  .m2 { background: #D8E8DF; color: #1B5E42; }
+  .m2 { background: #D6E0EE; color: #001E42; }
   .m3 { background: var(--gold-light); color: var(--gold-dark); }
   .rank-num { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--text3); }
   .tied { font-size: 9px; color: var(--text3); margin-left: 1px; }
@@ -276,7 +276,7 @@
 
   /* ── Expanded row ── */
   .exp-row td {
-    background: #F4F1EB !important;
+    background: #EEF1F7 !important;
     padding: 14px 16px;
     cursor: default;
     border-top: 1px solid var(--border);
@@ -376,7 +376,7 @@
 
 <div class="topbar">
   <div class="topbar-left">
-    <h1>2026 PGA Championship Golf Pool</h1>
+    <h1>2026 US Open Golf Pool</h1>
     <span class="tournament-badge" id="tourney-badge">Loading…</span>
   </div>
   <div class="topbar-right">
@@ -592,7 +592,7 @@ async function fetchData() {
     dot.className = 'live-dot';
     const now = new Date();
     document.getElementById('ts').textContent = 'Updated ' + now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-    document.getElementById('tourney-badge').textContent = 'PGA Championship 2026';
+    document.getElementById('tourney-badge').textContent = 'US Open 2026';
     // Round
     document.getElementById('h-round').textContent = currentRound || '—';
     // Projected cut
